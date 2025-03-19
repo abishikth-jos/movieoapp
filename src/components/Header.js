@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logoold from '../assets/logo.png'
-import logo from '../assets/textlog.png'
+import logo from '../assets/logo.png'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import userIcon from '../assets/user.png'
 import { IoSearchOutline } from "react-icons/io5";
