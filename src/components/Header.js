@@ -24,8 +24,8 @@ const Header = () => {
     }
 
   return (
-    <header className='fixed top-0 w-full h-5 bg-black bg-opacity-50 z-40'>
-            <div className='container mx-auto px-3 flex items-center h-full'>
+    <header className='fixed top-0 w-full h-16 bg-black bg-opacity-50 z-40'>
+            <div className='container mx-auto px-3 flex items-center h-50'>
                 <Link to={"/"}>
                     <img
                         src={logo}
