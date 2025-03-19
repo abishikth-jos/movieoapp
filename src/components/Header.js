@@ -25,12 +25,12 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 w-full h-16 bg-black bg-opacity-50 z-40'>
-            <div className='container mx-auto px-3 flex items-center h-5'>
+            <div className='container mx-auto px-3 flex items-center h-full'>
                 <Link to={"/"}>
                     <img
                         src={logo}
                         alt='logo'
-                        width={5} 
+                        width={16} 
                     />
                 </Link>
 
