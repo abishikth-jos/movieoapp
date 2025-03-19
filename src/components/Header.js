@@ -30,7 +30,7 @@ const Header = () => {
                     <img
                         src={logo}
                         alt='logo'
-                        width={120} 
+                        width={50} 
                     />
                 </Link>
 
