@@ -29,7 +29,7 @@ const Header = () => {
                     <img
                         src={logo}
                         alt='logo'
-                        width={150} 
+                        width={400} 
                     />
                 </Link>
 
