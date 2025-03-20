@@ -8,6 +8,7 @@ import useFetch from '../hooks/useFetch'
 
 const Home = () => {
   const trendingData = useSelector(state => state.movieoData.bannerData)
+  const { data: trendingMalayalamMovies, loading, error } = useFetch('/trending/movie/day?language=ml'); // Fetch movies in Malayalam
   const { data : nowPlayingData } = useFetch('/movie/now_playing')
   const { data : topRatedData } = useFetch('/movie/top_rated')
   const { data : popularTvShowData } = useFetch('/tv/popular')
