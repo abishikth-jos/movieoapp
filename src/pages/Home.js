@@ -18,6 +18,7 @@ const Home = () => {
     <div>
         <BannerHome/>
         <HorizontalScollCard data={trendingData} heading={"Trending"} trending={true}/>
+        <HorizontalScollCard data={trendingMalayalamMovies} heading={"Trending Malayalam Movies"} media_type={"movie"} />
         <HorizontalScollCard data={nowPlayingData} heading={"Now Playing"} media_type={"movie"}/>
         <HorizontalScollCard data={topRatedData} heading={"Top Rated Movies"} media_type={"movie"}/>
         <HorizontalScollCard data={popularTvShowData} heading={"Popular TV Show"} media_type={"tv"}/>
