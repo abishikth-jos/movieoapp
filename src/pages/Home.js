@@ -6,6 +6,15 @@ import HorizontalScollCard from '../components/HorizontalScollCard'
 import axios from 'axios'
 import useFetch from '../hooks/useFetch'
 
+
+/* Example CSS */
+.malayalam-movies-container {
+  min-height: 500px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 const Home = () => {
   const trendingData = useSelector(state => state.movieoData.bannerData)
   const { data: trendingMalayalamMovies, loading, error } = useFetch('/discover/movie?with_original_language=ml&sort_by=popularity.desc'); // Discover Malayalam Movies
@@ -18,7 +27,7 @@ const Home = () => {
     <div>
         <BannerHome/>
         <HorizontalScollCard data={trendingData} heading={"Trending"} trending={true}/>
-        <HorizontalScollCard data={trendingMalayalamMovies} heading={"Trending Malayalam Movies"} media_type={"movie"} />
+        <HorizontalScollCard data={trendingMalayalamMovies} heading={"Trending Malayalam Movies"} media_type={"movie"} className={"malayalam-movies-container"}/>
         <HorizontalScollCard data={nowPlayingData} heading={"Now Playing"} media_type={"movie"}/>
         <HorizontalScollCard data={topRatedData} heading={"Top Rated Movies"} media_type={"movie"}/>
         <HorizontalScollCard data={popularTvShowData} heading={"Popular TV Show"} media_type={"tv"}/>
