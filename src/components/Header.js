@@ -60,7 +60,7 @@ const Header = () => {
                                 <IoSearchOutline/>
                         </button>
                     </form>
-                    <div className='w-8 h-8 rounded-full overflow-hidden cursor-pointer active:scale-50 transition-all'>
+                    <div className='w-10 h-10 rounded-full overflow-hidden cursor-pointer active:scale-50 transition-all'>
                         <img
                             src={userIcon}
                             width='w-ful h-full' 
